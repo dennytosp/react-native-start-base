@@ -11,17 +11,10 @@ export const COLORS = {
   red: '#EB001B',
   yellow: '#FFCC00',
 
-  light: '#606060',
-  light01: '#909090',
-  light02: '#808080',
-
-  gray00: '#F0F0F0',
-  gray01: '#F6F6F6',
-  gray02: '#E8E8E8',
-  gray03: '#BDBDBD',
-  gray04: '#666666',
-  gray05: '#E0E0E0',
-  gray06: '#F2F2F2',
+  primary: '#40BFFF',
+  pale_red: '#FB7181',
+  secondary: '#223263',
+  grey: '#9098B1',
 };
 
 export const SIZES = {
@@ -33,21 +26,23 @@ export const SIZES = {
 
 export const FONTS = {
   //Primary Fonts
-  black: 'NunitoSans-Black',
-  bold: 'NunitoSans-Bold',
-  extraBold: 'NunitoSans-ExtraBold',
-  extraLight: 'NunitoSans-ExtraLight',
-  italic: 'NunitoSans-Italic',
-  light: 'NunitoSans-Light',
-  regular: 'NunitoSans-Regular',
-  semiBold: 'NunitoSans-SemiBold',
-
-  //Gelasio Fonts
-  gelasioBold: 'Gelasio-Bold',
-  gelasioItalic: 'Gelasio-Italic',
-  gelasioMedium: 'Gelasio-Medium',
-  gelasioRegular: 'Gelasio-Regular',
-  gelasioSemiBold: 'Gelasio-SemiBold',
+  black: 'Poppins-Black',
+  blackItalic: 'Poppins-BlackItalic',
+  bold: 'Poppins-Bold',
+  boldItalic: 'Poppins-BoldItalic',
+  extraBold: 'Poppins-ExtraBold',
+  extraLight: 'Poppins-ExtraLight',
+  extraLightItalic: 'Poppins-ExtraLightItalic',
+  italic: 'Poppins-Italic',
+  light: 'Poppins-Light',
+  lightItalic: 'Poppins-LightItalic',
+  medium: 'Poppins-Medium',
+  mediumItalic: 'Poppins-MediumItalic',
+  regular: 'Poppins-Regular',
+  semibold: 'Poppins-SemiBold',
+  semiboldItalic: 'Poppins-SemiBoldItalic',
+  thin: 'Poppins-Thin',
+  thinItalic: 'Poppins-ThinItalic',
 };
 
 const theme = {COLORS, SIZES, FONTS};

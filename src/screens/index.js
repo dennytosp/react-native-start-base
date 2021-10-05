@@ -1,9 +1,12 @@
 import Onboard from './auth/Onboarding';
 import Home from './Common/Home';
-import MyList from './Common/MyList';
-import Order from './Common/Order';
-import Profile from './Common/Profile';
+import Explore from './Common/Explore';
+import Cart from './Common/Cart';
+import Offer from './Common/Offer';
+import Account from './Common/Account';
+import Splash from './auth/Splash';
+import Login from './auth/Login';
+import Register from './auth/Register';
 
-export const common = {Home, MyList, Order, Profile};
-export const authen = {Onboard};
-
+export const common = {Home, Explore, Cart, Offer, Account};
+export const authen = {Onboard, Splash, Login, Register};

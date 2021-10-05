@@ -5,6 +5,7 @@ import {common, authen} from './../screens';
 import {StatusBar} from 'react-native';
 
 import {StackStep} from './';
+import { routes } from './routes';
 const Stack = createNativeStackNavigator();
 
 const MainStackNavigator = () => {
@@ -43,9 +44,9 @@ const MainStackNavigator = () => {
   if (isFirstLaunch === null) {
     return null;
   } else if (isFirstLaunch == true) {
-    routeName = 'Onboard';
+    routeName = routes.ONBOARD;
   } else {
-    routeName = 'Common';
+    routeName = routes.SPLASH;
   }
 
   return (
@@ -59,13 +60,18 @@ const MainStackNavigator = () => {
         initialRouteName={routeName}
         screenOptions={{headerShown: false}}>
         <>
-          <Stack.Screen name="Onboard" component={authen.Onboard} />
+          <Stack.Screen name={routes.ONBOARD} component={authen.Onboard} />
+          <Stack.Screen name={routes.SPLASH} component={authen.Splash} />
+          <Stack.Screen name={routes.LOGIN} component={authen.Login} />
+          <Stack.Screen name={routes.REGISTER} component={authen.Register} />
 
-          <Stack.Screen name="Common" component={StackStep.TabNavigation} />
-          <Stack.Screen name="Home" component={common.Home} />
-          <Stack.Screen name="Order" component={common.Order} />
-          <Stack.Screen name="MyList" component={common.MyList} />
-          <Stack.Screen name="Profile" component={common.Profile} />
+          <Stack.Screen name={routes.COMMON} component={StackStep.TabNavigation} />
+          <Stack.Screen name={routes.HOME} component={common.Home} />
+          <Stack.Screen name={routes.EXPLORE} component={common.Explore} />
+          <Stack.Screen name={routes.CART} component={common.Cart} />
+          <Stack.Screen name={routes.OFFER} component={common.Offer} />
+          <Stack.Screen name={routes.ACCOUNT} component={common.Account} />
+          
         </>
       </Stack.Navigator>
     </>

@@ -3,7 +3,7 @@ import {photos} from '../../assets';
 
 export const ONBOARD_DATA = [
   {
-    title: 'Welcome to Valen.',
+    title: 'Welcome to Sherwin.',
     text: 'I provide essential stuff for your ui designs every tuesday!.',
     image: photos.onboard01,
   },
@@ -13,7 +13,7 @@ export const ONBOARD_DATA = [
     image: photos.onboard02,
   },
   {
-    title: 'Download now!',
+    title: 'Start now!',
     text: 'You can follow me if you wantand comment on any to get some freebies',
     image: photos.onboard03,
   },

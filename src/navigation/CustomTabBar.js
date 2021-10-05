@@ -3,7 +3,7 @@ import React from 'react';
 import {Image, Platform, Pressable, StyleSheet, View, Text} from 'react-native';
 import {Badge} from 'react-native-elements';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {COLORS} from '../constants';
+import {COLORS, FONTS} from '../constants';
 import {icons} from '../assets';
 
 const CustomTabBar = ({state, descriptors, navigation}) => {
@@ -30,17 +30,21 @@ const CustomTabBar = ({state, descriptors, navigation}) => {
           index === 0
             ? icons.home
             : index === 1
-            ? icons.product
-            : index === 2
             ? icons.favorite
+            : index === 2
+            ? icons.product
+            : index === 3
+            ? icons.bag
             : icons.profile;
         const iconselect =
           index === 0
             ? icons.home
             : index === 1
-            ? icons.product
-            : index === 2
             ? icons.favorite
+            : index === 2
+            ? icons.product
+            : index === 3
+            ? icons.bag
             : icons.profile;
         const onPress = () => {
           const event = navigation.emit({
@@ -94,15 +98,16 @@ export default CustomTabBar;
 const styles = StyleSheet.create({
   btn: {flex: 1, alignItems: 'center'},
   textlabel: isFocused => ({
-    color: isFocused ? COLORS.red : COLORS.black,
-    marginTop: 5,
+    color: isFocused ? COLORS.primary : COLORS.grey,
+    marginTop: 12.6 / 2,
     fontSize: 10,
+    fontFamily: FONTS.regular,
   }),
   iconstyle: isFocused => ({
     width: getSize.s(20),
     height: getSize.s(20),
     resizeMode: 'contain',
-    tintColor: isFocused ? COLORS.red : COLORS.black,
+    tintColor: isFocused ? COLORS.primary : COLORS.grey,
   }),
   containerStyle: {
     position: 'absolute',

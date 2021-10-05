@@ -18,24 +18,31 @@ const BottomTabNavigation = () => {
         }}
       />
       <Tab.Screen
-        name="Order"
-        component={common.Order}
+        name="Explore"
+        component={common.Explore}
         options={{
-          tabBarLabel: 'Order',
+          tabBarLabel: 'Explore',
         }}
       />
       <Tab.Screen
-        name="MyList"
-        component={common.MyList}
+        name="Cart"
+        component={common.Cart}
         options={{
-          tabBarLabel: 'My List',
+          tabBarLabel: 'Cart',
         }}
       />
       <Tab.Screen
-        name="Profile"
-        component={common.Profile}
+        name="Offer"
+        component={common.Offer}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: 'Offer',
+        }}
+      />
+      <Tab.Screen
+        name="Account"
+        component={common.Account}
+        options={{
+          tabBarLabel: 'Account',
         }}
       />
     </Tab.Navigator>
